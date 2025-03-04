@@ -1,0 +1,157 @@
+﻿/* Định dạng modal */
+.modal {
+    display: none; /* Ẩn modal mặc định */
+    position: fixed; /* Đặt modal cố định trên màn hình */
+    z-index: 1; /* Đảm bảo modal luôn hiển thị phía trên */
+    left: 0;
+    top: 0;
+    width: 100%; /* Chiếm toàn bộ chiều rộng */
+    height: 100%; /* Chiếm toàn bộ chiều cao */
+    overflow: auto; /* Cho phép cuộn nếu cần */
+    background-color: rgba(0, 0, 0, 0.5); /* Màu nền đen với độ trong suốt */
+}
+
+/* Định dạng nội dung modal */
+.modal-content {
+    background-color: #fefefe; /* Màu nền trắng */
+    margin: 10% auto; /* Căn giữa modal */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 400px; /* Chiều rộng cố định của modal */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Đổ bóng */
+    border-radius: 10px; /* Bo góc */
+    animation: modalOpen 0.4s; /* Hiệu ứng mở modal */
+}
+
+/* Hiệu ứng mở modal */
+@keyframes modalOpen {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Nút đóng modal */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+/* Định dạng tiêu đề modal */
+.modal-content h2 {
+    color: #0056b3; /* Màu xanh */
+    border-bottom: 2px solid #0056b3; /* Đường viền dưới */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Định dạng nút tải lên */
+#uploadFileButton {
+    background-color: #0056b3; /* Màu nền xanh */
+    color: white; /* Màu chữ trắng */
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 0;
+    cursor: pointer;
+    border-radius: 5px; /* Bo góc */
+    transition: background-color 0.3s; /* Hiệu ứng khi di chuột vào */
+}
+
+    #uploadFileButton:hover {
+        background-color: #004494; /* Màu khi di chuột vào */
+    }
+
+/* CSS cho preview */
+#preview {
+    width: 100%;
+    height: 300px; /* Đặt chiều cao cố định cho khung preview */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd;
+    margin-top: 20px;
+    overflow: hidden;
+}
+/* Định dạng nút tải lên */
+#uploadFileButton {
+    background-color: #0056b3; /* Màu nền xanh */
+    color: white; /* Màu chữ trắng */
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 0;
+    cursor: pointer;
+    border-radius: 5px; /* Bo góc */
+    transition: background-color 0.3s; /* Hiệu ứng khi di chuột vào */
+}
+    #uploadFileButton:hover {
+        background-color: #004494; /* Màu khi di chuột vào */
+    }
+    #preview img,
+    #preview video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Đảm bảo ảnh/video bao phủ toàn bộ khung */
+    }
+.modal {
+    z-index: 1000; /* Đảm bảo modal có z-index cao hơn so với các phần tử khác */
+}
+s
+.tyn-content-inner {
+    position: relative; /* Đặt vị trí là tương đối để có thể cài đặt z-index */
+    z-index: 1; /* Đặt z-index nhỏ hơn so với modal để đảm bảo nằm dưới */
+}
+.tyn-image1 {
+    width: 540px; /* Đặt chiều rộng cố định */
+    height: 600px; /* Đặt chiều cao cố định */
+    object-fit: cover; /* Đảm bảo hình ảnh vẫn giữ tỷ lệ và lấp đầy khu vực */
+}
+.tyn-image {
+    width: 150px; /* Đặt chiều rộng cố định */
+    height: 200px; /* Đặt chiều cao cố định */
+    object-fit: cover; /* Đảm bảo hình ảnh vẫn giữ tỷ lệ và lấp đầy khu vực */
+}
+.tyn-image {
+    position: relative;
+    display: block;
+    width: 100%; /* Đảm bảo ảnh chiếm toàn bộ chiều rộng */
+    height: auto;
+}
+
+.delete-button {
+    position: absolute;
+    top: 10px; /* Khoảng cách từ trên cùng của ảnh */
+    right: 10px; /* Khoảng cách từ bên phải của ảnh */
+    background-color: rgba(128, 128, 128, 0.5); /* Màu xám và độ trong suốt 50% */
+    color: white; /* Màu chữ của nút */
+    border: none;
+    border-radius: 50%; /* Tạo hình tròn */
+    width: 30px; /* Chiều rộng của nút */
+    height: 30px; /* Chiều cao của nút */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 16px; /* Kích thước chữ */
+}
+
+

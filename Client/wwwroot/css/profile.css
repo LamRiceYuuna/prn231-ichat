@@ -1,0 +1,13 @@
+﻿.position-relative {
+    position: relative;
+}
+
+.btn-eye {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}

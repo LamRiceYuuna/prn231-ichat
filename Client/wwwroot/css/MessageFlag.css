@@ -1,0 +1,9 @@
+﻿.read {
+  font-weight: normal;
+  opacity: 0.6;
+}
+
+.unread {
+    font-weight: bold;
+    opacity: 1;
+}

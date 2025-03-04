@@ -1,0 +1,44 @@
+﻿﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>@ViewData["Title"] ConnectMe</title>
+    @* <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/Client.styles.css" asp-append-version="true" /> *@
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="~/images/favicon.ico">
+    <title>Messages | ConnectMe | Chat Application</title>
+    <link rel="stylesheet" href="~/assets/css/bundle1c4a.css">
+    <link rel="stylesheet" href="~/assets/css/app1c4a.css">
+    <link rel="stylesheet" href="https://unpkg.com/nprogress@0.2.0/nprogress.css">
+    <script src="~/microsoft/signalr/dist/browser/signalr.js"></script>
+    <script src="~/js/user_hub_connect.js"></script>
+
+    <link href="~/css/messageflag.css" rel="stylesheet" />
+    <script src="~/js/chat_list.js"></script>
+    @* home_page_right *@
+    <link href="~/css/addFriendsButton.css" rel="stylesheet" />
+    <script src="~/js/add_friends_to_group.js"></script>
+    <script src="~/js/home_page_mute.js"></script>
+    <script src="~/js/home_page_file.js"></script>
+
+
+    <script src="~/js/data_user.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
+    
+</head>
+<body>
+
+    @RenderBody()
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <script src="~/assets/js/bundle1c4a.js"></script>
+    <script src="~/assets/js/app1c4a.js"></script>
+    <script src="~/js/notifications.js"></script>
+    
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

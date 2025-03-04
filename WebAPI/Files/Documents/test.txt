@@ -1,0 +1,1 @@
+Hiển thị document thành công hoặc ít nhất là với file .txt

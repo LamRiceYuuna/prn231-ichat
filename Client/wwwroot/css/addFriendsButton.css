@@ -1,0 +1,23 @@
+﻿.btn-added {
+    background-color: #28a745; /* Màu xanh lá cây */
+    color: white;
+}
+
+.btn-added:disabled {
+    background-color: #6c757d; /* Màu xám khi nút bị vô hiệu hóa */
+    color: white;
+}
+
+.friends-list-container {
+    max-height: 200px; /* Điều chỉnh chiều cao tối đa của danh sách để hiển thị thanh cuộn */
+    overflow-y: auto; /* Kích hoạt thanh cuộn dọc khi nội dung vượt quá chiều cao tối đa */
+}
+
+#friendsInGroupList {
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;/
+}
+
